@@ -7,5 +7,9 @@ $quantidadeNotas = count($notas);
 echo "Quantidade de notas no array: $quantidadeNotas" . PHP_EOL;
 
 foreach ($notas as $nota){
-    echo "Nota: $nota" . PHP_EOL;
+    if ($nota >= 6){
+        echo "Nota: $nota" . " Aluno aprovado" . PHP_EOL;
+    } else {
+        echo "Nota: $nota" . " Aluno reprovado" . PHP_EOL;
+    }
 }
